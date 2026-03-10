@@ -1,12 +1,12 @@
 class week1_2 {
-    public static void main(String[] args) {
-        int totalPens = 14;
-        int totalStudents = 3;
-        int pensPerStudent = totalPens / totalStudents;
-        int remainingPens = totalPens % totalStudents;
-        System.out.println("The Pen Per Student is " 
-                            + pensPerStudent 
-                            + " and the remaining pen not distributed is " 
-                            + remainingPens);
+    public static void main(String[] args) { 
+        int costPrice = 129;
+        int sellingPrice = 191; 
+        int profit = sellingPrice - costPrice; 
+        double profitPercentage = (double) profit / costPrice * 100;
+        System.out.println("The Cost Price is INR " + costPrice +
+                           " and Selling Price is INR " + sellingPrice +
+                           "\nThe Profit is INR " + profit +
+                           " and the Profit Percentage is " + profitPercentage);
     }
 }
