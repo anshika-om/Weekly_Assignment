@@ -1,19 +1,16 @@
 import java.util.Scanner;
 class week1_2 {
     public static void main(String[] args) {
+        double km;
         Scanner input = new Scanner(System.in);
-        double heightCm;
-        System.out.print("Enter your height in centimeters: ");
-        heightCm = input.nextDouble();
-        double totalInches = heightCm / 2.54;
-        int feet = (int) (totalInches / 12);
-        double inches = totalInches % 12;
-        System.out.println("Your Height in cm is " 
-                            + heightCm 
-                            + " while in feet is " 
-                            + feet 
-                            + " and inches is " 
-                            + inches);
+        System.out.print("Enter distance in kilometers: ");
+        km = input.nextDouble();
+        double miles = km / 1.6;
+        System.out.println("The total miles is " 
+                            + miles 
+                            + " mile for the given " 
+                            + km 
+                            + " km");
         input.close();
     }
 }
