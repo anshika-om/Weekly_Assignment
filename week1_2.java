@@ -1,9 +1,13 @@
 class week1_2 {
     public static void main(String[] args) {
-        double kilometers = 10.8;
-        double conversionFactor = 1.6;
-        double miles = kilometers * conversionFactor;
-        System.out.println("The distance " + kilometers + 
-                           " km in miles is " + miles);
+        double radiusKm = 6378;
+        double pi = Math.PI;
+        double volumeKm = (4.0 / 3) * pi * Math.pow(radiusKm, 3);
+        double kmToMiles = 0.621371;
+        double volumeMiles = volumeKm * Math.pow(kmToMiles, 3);
+        System.out.println("The volume of earth in cubic kilometers is " 
+                            + volumeKm 
+                            + " and cubic miles is " 
+                            + volumeMiles);
     }
 }
