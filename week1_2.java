@@ -2,18 +2,18 @@ import java.util.Scanner;
 class week1_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double fee;
-        double discountPercent;
-        System.out.print("Enter Student Fee: ");
-        fee = input.nextDouble();
-        System.out.print("Enter University Discount Percentage: ");
-        discountPercent = input.nextDouble();
-        double discount = (fee * discountPercent) / 100;
-        double finalFee = fee - discount;
-        System.out.println("The discount amount is INR " 
-                            + discount 
-                            + " and final discounted fee is INR " 
-                            + finalFee);
+        double heightCm;
+        System.out.print("Enter your height in centimeters: ");
+        heightCm = input.nextDouble();
+        double totalInches = heightCm / 2.54;
+        int feet = (int) (totalInches / 12);
+        double inches = totalInches % 12;
+        System.out.println("Your Height in cm is " 
+                            + heightCm 
+                            + " while in feet is " 
+                            + feet 
+                            + " and inches is " 
+                            + inches);
         input.close();
     }
 }
